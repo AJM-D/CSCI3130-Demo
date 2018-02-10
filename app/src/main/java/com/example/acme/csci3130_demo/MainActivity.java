@@ -28,5 +28,12 @@ public class MainActivity extends AppCompatActivity {
         String msg = Text_Field.getText().toString();
         textAppear.setText(msg);
     }
-
+    public boolean notPassword(String m){
+        boolean nP = !m.equalsIgnoreCase("password");
+        return nP;
+    }
+    public boolean atleastEight(String m){
+        boolean nP = m.toString().length()>7;
+        return nP;
+    }
 }
